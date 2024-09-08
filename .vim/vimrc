@@ -1,0 +1,84 @@
+language messages en_US.UTF-8
+set langmenu=en_US.UTF-8
+
+" Plugins using vim-plug
+call plug#begin()
+    Plug 'preservim/nerdtree'
+    Plug 'joshdick/onedark.vim'
+    Plug 'itchyny/lightline.vim'
+    Plug 'mileszs/ack.vim'
+    Plug 'ctrlpvim/ctrlp.vim'
+call plug#end()
+
+" Color
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
+colorscheme onedark
+
+" Setters
+set laststatus=2
+set wildmenu
+
+set tabstop=4
+set expandtab
+set softtabstop=4 
+set shiftwidth=4
+
+set clipboard=unnamed
+set splitbelow
+set splitright
+
+set number
+set relativenumber
+set showcmd
+set cursorline
+set wildmode=longest,list,full
+
+set lazyredraw
+set showmatch
+set incsearch
+set hlsearch
+set backspace=indent,eol,start
+
+" Mappings
+let mapleader=" "   
+"nnoremap <C-p> :NERDTreeToggle<Cr>
+nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>a :Ag
+
+nnoremap j gj
+nnoremap k gk
+nnoremap J :m-2<CR>
+nnoremap K :m+<CR>
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap n nzzzv
+nnoremap N Nzzzv
+xnoremap <leader>p "_dP
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
+nnoremap Q <nop>
+
+
+"let g:ackprg = 'ag --vimgrep'
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+
+
+
+inoremap jk <esc>
+
+" CtrlP settings end
+let g:ctrlp_match_window='bottom,order:ttb'
+let g:ctrlp_switch_buffer=0
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_show_hidden=1
+"let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
+" CtrlP settings end
+
+"autocmd VimEnter * NERDTree
+let NERDTreeShowHidden=1
+let g:NERDTreeMouseMode=3
+

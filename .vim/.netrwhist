@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/janlam/.vim'
+let g:netrw_dirhist_2='/Users/janlam/Library/Containers/com.apple.inputmethod.VietnameseIM/Data/Library/Colors'
+let g:netrw_dirhist_1='/Users/janlam/Library/Containers/com.apple.inputmethod.VietnameseIM/Data/Library/Calendars'
+let g:netrw_dirhist_0='/Users/janlam/Library/Containers/com.apple.inputmethod.VietnameseIM/Data/Library/ColorPickers'
+let g:netrw_dirhist_9='/Users/janlam/Library/Containers/com.apple.inputmethod.VietnameseIM/Data/Library/Compositions'
+let g:netrw_dirhist_8='/Users/janlam/Library/Containers/com.apple.inputmethod.VietnameseIM/Data/Library/FontCollections'
+let g:netrw_dirhist_7='/opt/homebrew/Cellar/vim/9.1.0650/share/vim/vim91'
+let g:netrw_dirhist_6='/Users/janlam'
+let g:netrw_dirhist_5='/Users/janlam/.vim'
+let g:netrw_dirhist_4='/Users/janlam'
