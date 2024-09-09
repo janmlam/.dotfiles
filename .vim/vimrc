@@ -62,8 +62,8 @@ nnoremap <leader>Y "+Y
 nnoremap Q <nop>
 
 " Bin setup
-"let g:ackprg = 'ag --vimgrep'
-let g:ackprg = expand('~/.vim/bin/ack --vimgrep')
+" let g:ackprg = 'ag --vimgrep'
+" let g:ackprg = expand('~/.vim/bin/ack --vimgrep')
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
